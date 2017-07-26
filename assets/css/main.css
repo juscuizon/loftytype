@@ -6,11 +6,16 @@
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif");
 @import url("https://fonts.googleapis.com/css?family=Rokkitt");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:100");
 @import url("https://fonts.googleapis.com/css?family=Righteous");
 @import url("https://fonts.googleapis.com/css?family=Lekton|Molengo");
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
 @import url("https://fonts.googleapis.com/css?family=Cabin+Condensed");
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif");
+@import url("https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script");
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2633,3 +2638,86 @@ template {
 * {
   margin: 0px;
   padding: 0px; }
+
+body {
+  min-height: 5000px; }
+
+.welcome-section-container {
+  background-color: #34495e;
+  height: 100vh;
+  -webkit-background-size: cover;
+          background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .welcome-section-container .navigation ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .welcome-section-container .navigation ul li {
+      list-style: none; }
+      .welcome-section-container .navigation ul li a {
+        text-decoration: none;
+        color: #fff; }
+      .welcome-section-container .navigation ul li .text {
+        font-family: "" Montserrat ", sans-serif";
+        font-size: 15px;
+        padding-bottom: 3px; }
+      .welcome-section-container .navigation ul li .text:hover {
+        border-bottom: 3px solid #f39c12; }
+    .welcome-section-container .navigation ul .logo {
+      width: 150px;
+      height: 112.5px; }
+  .welcome-section-container .content-area {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center; }
+    .welcome-section-container .content-area .welcome {
+      margin-top: 120px;
+      color: #fff;
+      font-family: 'Lobster', cursive;
+      font-size: 60px; }
+    .welcome-section-container .content-area .colored-text {
+      color: #f39c12; }
+    .welcome-section-container .content-area .light-bulbs {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 500px;
+      height: 281.25px;
+      margin: 0 auto; }

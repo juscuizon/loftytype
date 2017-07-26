@@ -1,18 +1,18 @@
 mixin navigation-links
 	ul
-		li: a(href="#") SERVICES
-		li: a(href="#") ABOUT US
-		li: a(href="#"): img(src="{{site.baseurl}}/assets/img/logo.svg")
-		li: a(href="#") BLOG
-		li: a(href="#") CONTACT US
+		li: a.text(href="#") SERVICES
+		li: a.text(href="#") ABOUT US
+		li: a.non-text(href="#"): img.logo(src="{{site.baseurl}}/assets/img/logo.svg")
+		li: a.text(href="#") BLOG
+		li: a.text(href="#") CONTACT US
 
 
-.welcome-section-container.full-screen
+.welcome-section-container
 	.navigation
 			+navigation-links
 
 	.content-area
-			h3 We Design, Develop, and Realize your Ideas. 
+			.welcome We Design, Develop, and Realize your #[span.colored-text Ideas.]
 
-			.light-bulbs
-				img(src="{{site.baseurl}}/assets/img/light-bulb.svg")
+			
+			img.light-bulbs(src="{{site.baseurl}}/assets/img/light-bulb.svg")
