@@ -1,0 +1,18 @@
+mixin navigation-links
+	ul
+		li: a(href="#") SERVICES
+		li: a(href="#") ABOUT US
+		li: a(href="#") LOGO
+		li: a(href="#") BLOG
+		li: a(href="#") CONTACT US
+
+
+.welcome-section-container.full-screen
+	.navigation
+			+navigation-links
+
+	.content-area
+			h3 We Design, Develop, and Realize your Ideas. 
+
+			.light-bulbs
+				img(src="{{site.baseurl}}/assets/img/light-bulb.svg")

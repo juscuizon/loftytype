@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lekton|Molengo");
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two");
 @import url("https://fonts.googleapis.com/css?family=Cabin+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif");
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2628,3 +2629,7 @@ template {
  */
 [hidden] {
   display: none; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
