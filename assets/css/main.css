@@ -2702,7 +2702,10 @@ body {
         font-size: 16px;
         padding-bottom: 3px; }
       .welcome-section-container .navigation ul li .text:hover {
-        border-bottom: 3px solid #f39c12; }
+        border-bottom: 3px solid #f39c12;
+        -webkit-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
     .welcome-section-container .navigation ul .logo {
       width: 150px;
       height: 112.5px; }
