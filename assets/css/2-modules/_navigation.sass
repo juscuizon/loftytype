@@ -1,0 +1,95 @@
+//================Mobile Menu====================
+.mobile-navigation
+	max-height: 0px
+	transform: translateY(-80px)
+
+.mobile-navigation.fade
+	transform: translateY(-90px)
+	transition: all 0.3s ease
+
+.mobile-navigation.active
+	display: flex
+	background-color: #fff
+	min-height: 177px
+	min-width: 100vw
+	transform: translateY(0px)
+	transition: all 0.3s ease
+
+	ul
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		margin: 0 auto
+
+		li
+			list-style-type: none
+			margin-top: 25px
+			border-bottom: 0.2px solid #dedede
+			width: 100vw
+
+			a
+				text-decoration: none
+				color: #333333
+				font-family: 'Montserrat', sans-serif
+				font-size: 16px
+
+//================Mobile Button====================
+.mobile-menu-button
+	display: none
+	justify-content: center
+	position: absolute
+	right: 5px
+	width: 43px
+	height: 43px
+	z-index: 3
+
+	.hamburger-button
+		position: absolute
+		width: 43px
+		height: 7px
+		background: #f39c12
+		transition: all 0.3s
+
+	.hamburger-button:before, .hamburger-button:after
+		content: ''
+		position: absolute
+		width: 43px
+		height: 7px
+		background: #f39c12
+		transition: all 0.3s
+
+	.hamburger-button:before
+		top: 18px
+	.hamburger-button:after
+		top: 38px
+
+.mobile-menu-button.active .hamburger-button:after
+	top: 20px
+	transform: rotate(45deg)
+
+.mobile-menu-button.active .hamburger-button
+	background: none
+
+.mobile-menu-button.active .hamburger-button:before
+	top: 20px
+	transform: rotate(-45deg)
+
+//================Responsive Design====================
+//Medium PC Monitors
+@media (min-width: 961px) and (max-width: 1200px)
+	.mobile-menu-button
+
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.mobile-menu-button
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.mobile-menu-button
+		display: flex
+
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.mobile-menu-button
+		display: flex

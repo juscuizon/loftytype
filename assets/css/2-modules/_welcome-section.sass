@@ -4,7 +4,7 @@
 	background-size: cover
 	display: flex
 	flex-direction: column
-
+	
 	.navigation
 
 		ul
@@ -21,16 +21,16 @@
 					color: #fff
 
 				.text
-					font-family: ''Montserrat', sans-serif'
-					font-size: 15px
+					font-family: 'Montserrat', sans-serif
+					font-size: 16px
 					padding-bottom: 3px
 
 				.text:hover
 					border-bottom: 3px solid #f39c12
 
 			.logo
-				width: 150px
-				height: 112.5px
+				width: 133.33px
+				height: 100px
 
 	.content-area
 		display: flex
@@ -38,7 +38,7 @@
 		justify-content: center
 		text-align: center
 
-		.welcome
+		.title
 			margin-top: 120px
 			color: #fff
 			font-family: 'Lobster', cursive
@@ -47,10 +47,36 @@
 		.colored-text
 			color: #f39c12
 
+//================Responsive Design====================
+//Medium PC Monitors
+@media (min-width: 961px) and (max-width: 1200px)
+	.welcome-section-container
 
-		.light-bulbs
-			display: flex
-			justify-content: center
-			width: 500px
-			height: 281.25px
-			margin: 0 auto
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.welcome-section-container
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.welcome-section-container
+			
+		.navigation
+			display: none
+
+		.content-area
+
+			.title
+				justify-content: center
+
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.welcome-section-container
+
+		.navigation
+			display: none
+
+		.content-area
+
+			.title
+				justify-content: center
+
