@@ -2640,8 +2640,7 @@ template {
   padding: 0px; }
 
 body {
-  min-height: 5000px;
-  background: #34495e; }
+  min-height: 5000px; }
 
 .welcome-section-container * {
   position: relative; }
@@ -2775,9 +2774,9 @@ body {
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  -webkit-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease; }
   .mobile-navigation.active ul {
     display: -webkit-box;
     display: -webkit-flex;
