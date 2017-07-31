@@ -2780,6 +2780,7 @@ body {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
     font-family: 'Oleo Script';
     font-size: 60px;
     webkit-font-smoothing: antialiased;
@@ -2876,31 +2877,28 @@ body {
               flex-direction: row; } }
 
 @media (min-width: 501px) and (max-width: 800px) {
-  .industries-section-container {
-    min-height: 100vh; }
-    .industries-section-container .title h2 {
-      font-size: 90px; }
-    .industries-section-container .industries-icon-container {
-      -webkit-box-orient: horizontal;
+  .industries-section-container .title h2 {
+    font-size: 90px; }
+  .industries-section-container .industries-icon-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 auto; }
+    .industries-section-container .industries-icon-container .first-col, .industries-section-container .industries-icon-container .second-col {
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: space-evenly;
-      -webkit-justify-content: space-evenly;
-          -ms-flex-pack: space-evenly;
-              justify-content: space-evenly;
-      margin: 0 auto; }
-      .industries-section-container .industries-icon-container .first-col, .industries-section-container .industries-icon-container .second-col {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 @media (min-width: 50px) and (max-width: 500px) {
   .industries-section-container {
-    min-height: 100vh;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
