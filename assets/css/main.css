@@ -2877,7 +2877,7 @@ body {
 
 @media (min-width: 501px) and (max-width: 800px) {
   .industries-section-container {
-    min-height: 160vh; }
+    min-height: 100vh; }
     .industries-section-container .title h2 {
       font-size: 90px; }
     .industries-section-container .industries-icon-container {
