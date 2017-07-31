@@ -1,0 +1,118 @@
+.industries-section-container
+	background: #e74c3c
+	height: 100vh
+	background-size: cover
+	display: flex
+	justify-content: space-around
+	flex-direction: column
+
+	.title
+
+		h2
+			display: flex
+			justify-content: center
+			font-family: 'Oleo Script'
+			font-size: 60px
+			webkit-font-smoothing: antialiased
+			color: #fff
+
+	.industries-icon-container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+
+		.first-col, .second-col
+			display: flex
+			flex-direction: row
+
+			.image-text-holder
+				display: flex
+				flex-direction: column
+				justify-content: space-around
+				min-width: 210px
+
+			.icon
+				width: 160px
+				height: 160px
+				margin: 0 auto
+
+			.text
+				padding-top: 20px
+				font-family: 'Bree Serif'
+				font-size: 20px
+				text-align: center
+				vertical-align: middle
+				color: #fff
+				margin: 0 auto
+
+//================Responsive Design====================
+//Medium PC Monitors
+@media (min-width: 961px) and (max-width: 1200px)
+	.industries-section-container
+
+		.industries-icon-container
+			flex-direction: column
+			justify-content: space-around
+			min-height: 600px
+
+			.first-col, .second-col
+				flex-direction: row
+
+
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.industries-section-container
+
+		.industries-icon-container
+			flex-direction: column
+			justify-content: space-evenly
+
+			.first-col, .second-col
+				flex-direction: row
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.industries-section-container
+		min-height: 160vh
+
+		.title
+			h2
+				font-size: 90px
+
+		.industries-icon-container
+			flex-direction: row
+			justify-content: space-evenly
+			margin: 0 auto
+
+			.first-col, .second-col
+				flex-direction: column
+
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.industries-section-container
+		min-height: 100vh
+		justify-content: space-around
+
+		.title
+			h2
+				font-size: 40px
+
+		.industries-icon-container
+			flex-direction: row
+			max-width: 414px
+
+			.first-col, .second-col
+				flex-direction: column
+				
+
+				.image-text-holder
+					margin-bottom: 10px
+
+					.icon
+						height: 100px
+						width: 100px
+					
+					.text
+						padding-top: 5px
+						font-size: 11px
