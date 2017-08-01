@@ -1,0 +1,178 @@
+.expertise-section-container
+	background: #1abc9c
+	height: 100vh
+	background-size: cover
+	display: flex
+	justify-content: flex-start
+	flex-direction: column
+
+	.expertise-section-first-row
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		min-height: 10vh
+
+		.title
+			position: relative
+			z-index: 1
+
+			h2
+				display: flex
+				justify-content: center
+				text-align: center
+				font-family: 'Oleo Script'
+				font-size: 60px
+				webkit-font-smoothing: antialiased
+				color: #fff
+
+		.col
+			display: flex
+			justify-content: center
+			flex-direction: column
+			text-align: center
+			min-width: 33.33vw
+
+		.col.filler
+			background: #16a085
+			min-width: 33.33vw
+			min-height: 11vh
+
+
+	.expertise-section-second-row
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		min-height: 100vh
+		position: absolute
+
+		.col
+			display: flex
+			justify-content: center
+			flex-direction: column
+			text-align: center
+			min-width: 33.33vw
+
+			h3
+				font-family: 'Droid Serif'
+				font-size: 50px
+				color: #fff
+				transition: 0.5s
+
+			h4
+				font-family: 'Montserrat'
+				font-size: 20px
+				color: #fff
+				transition: 1s
+
+			h3.hidden, h4.hidden
+				opacity: 0
+
+		.col.branding
+			background: #16a085
+
+		.col.web-design
+			z-index: 2
+
+		.col.marketing
+			background: #16a085
+
+		.col.branding:hover
+			
+			h3, h4
+				font-size: 0px
+				transition: 0.2s
+
+		.col.branding:hover:after
+			content: attr(data-hover)
+			font-family: 'Droid Serif'
+			font-size: 24px 
+			transition: 5s
+			display: flex
+			justify-content: center
+			text-align: center
+			color: #fff
+
+		.col.web-design:hover
+			
+			h3, h4
+				font-size: 0px
+				transition: 0.2s
+
+		.col.web-design:hover:after
+			content: attr(data-hover)
+			font-family: 'Droid Serif'
+			font-size: 24px 
+			transition: 5s
+			display: flex
+			justify-content: center
+			text-align: center
+			color: #fff
+
+		.col.marketing:hover
+			
+			h3, h4
+				font-size: 0px
+				transition: 0.5s
+
+		.col.marketing:hover:after
+			content: attr(data-hover)
+			font-family: 'Droid Serif'
+			font-size: 24px 
+			transition: 5s
+			display: flex
+			justify-content: center
+			text-align: center
+			color: #fff
+		
+//================Responsive Design====================
+//Medium PC Monitors
+@media (min-width: 961px) and (max-width: 1200px)
+	.expertise-section-container
+		height: 80vh
+
+		.expertise-section-second-row
+			height: 80vh
+
+			.col
+				height: 80vh
+
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.expertise-section-container
+		min-height: 80vh
+
+		.expertise-section-second-row
+
+			.col
+				min-height: 80vh
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.expertise-section-container
+		min-height: 20vh
+
+		.expertise-section-second-row
+			flex-direction: column
+			justify-content: space-around
+			width: 100vw
+			min-height: 60vh
+
+			.col
+				min-height: 33.33vh
+	
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.expertise-section-container
+		min-height: 20vh
+
+		.expertise-section-second-row
+			flex-direction: column
+			justify-content: space-around
+			width: 100vw
+			min-height: 60vh
+
+			.col
+				min-height: 33.33vh
+
+			.col.branding
+				margin-top: 80px
