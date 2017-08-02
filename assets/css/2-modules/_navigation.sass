@@ -76,6 +76,46 @@
 	top: 20px
 	transform: rotate(-45deg)
 
+//================Parallax Navigation====================
+.parallax-navigation
+	display: flex
+	justify-content: space-between
+	position: fixed
+	align-items: center
+	min-height: 80px
+	min-width: 100vw
+	background: #34495e
+	z-index: 0
+	opacity: 0.9
+
+	
+	ul
+		display: flex
+		flex-direction: row
+		margin-left: 30px
+
+		li
+			list-style-type: none
+			margin-right: 30px
+
+			a
+				text-decoration: none
+				color: #fff
+				font-family: 'Montserrat'
+
+			a:hover
+					border-bottom: 3px solid #f39c12
+					transition: all 0.1s ease-in-out
+
+	span
+		margin-right: 30px
+		color: #fff
+		font-family: 'Montserrat'
+
+	i
+		color: #fff
+
+
 //================Responsive Design====================
 //Medium PC Monitors
 @media (min-width: 961px) and (max-width: 1200px)
@@ -90,7 +130,13 @@
 	.mobile-menu-button
 		display: flex
 
+	.parallax-navigation
+		display: none
+
 //Mobile Devices
 @media (min-width: 50px) and (max-width: 500px)
 	.mobile-menu-button
 		display: flex
+
+	.parallax-navigation
+		display: none
