@@ -1,0 +1,121 @@
+.work-section-container *
+	position: relative
+
+.overlay2
+	position: relative
+
+.overlay2:before
+	position: absolute
+	content: " "
+	background: rgba(0, 0, 0, 0.5)
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: block
+	z-index: 0
+
+.work-section-container
+	background-image: url("../img/work-section.png")
+	height: 100vh
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+	.contact-form-container
+		display: flex
+		flex-direction: column
+		max-width: 400px
+		height: 300px
+
+		.address
+			display: flex
+			align-items: left
+			justify-content: center
+			flex-direction: column
+			border: solid #fff 5px
+			height: 150px
+
+			h3
+				color: #fff
+				font-family: 'Montserrat'
+				font-size: 30px
+
+		.contact-info
+			display: flex
+			flex-direction: row
+			
+			h4
+				color: #fff
+				font-family: 'Montserrat'
+
+			.email, .number
+				display: flex
+				align-items: center
+				justify-content: center
+				text-align: center
+				width: 350px
+				height: 100px
+				border: solid #fff 4px
+
+			.email
+				border-right: 3px
+				border-top: 3px
+
+			.number
+				border-top: 3px
+
+	.button
+		text-align: center
+		
+		a
+			text-decoration: none
+
+
+		h3:hover
+			background: #e74c3c
+			border: solid 1px #e74c3c
+			color: #fff
+
+		h3
+			color: #fff
+			font-family: 'Montserrat'
+			font-size: 20px
+			border: solid 1px #8e44ad
+			border-radius: 7px
+			padding: 5px
+			min-width: 200px
+			background: #9b59b6
+
+//================Responsive Design====================
+//Medium PC Monitors
+@media (min-width: 961px) and (max-width: 1200px)
+	.work-section-container
+
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.work-section-container
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.work-section-container
+
+		.contact-form-container
+			
+	
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.work-section-container.overlay2
+		margin-top: 80px
+		height: 90vh
+
+		.contact-form-container
+			max-width: 315px
+
+		.button
+			display: flex
+			justify-content: flex-end
