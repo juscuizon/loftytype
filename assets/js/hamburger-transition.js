@@ -31,10 +31,8 @@ function toggleMenu() {
     var ele1 = document.getElementsByClassName('mobile-navigation')[0];
     if (!hasClass(ele1, "active")) {
         addClass(ele1, "active");
-        removeClass(ele1, "fade");
     } else {
         removeClass(ele1, "active");
-        addClass(ele1, "fade");
     }
 
 }

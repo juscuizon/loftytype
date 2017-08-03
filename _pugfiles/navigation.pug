@@ -1,9 +1,10 @@
 mixin mobile-navigation-links
 	ul
+		li: a.text(href="../{{site.basseurl}}") HOME
 		li: a.text(href="#") SERVICES
-		li: a.text(href="#") ABOUT US
+		li: a.text(href="{{site.baseurl}}/About-us") ABOUT US
 		li: a.text(href="#") BLOG
-		li: a.text(href="#") CONTACT US
+		li: a.text(href="{{site.baseurl}}/Contact-us") CONTACT US
 
 .mobile-menu-button#mobile-menu-button
 		.hamburger-button
