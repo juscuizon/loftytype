@@ -2906,7 +2906,9 @@ body {
             flex-direction: column;
     margin-bottom: 50px; }
     .industries-section-container #particles-js .industries-icon-container .first-col .image-text-holder, .industries-section-container #particles-js .industries-icon-container .second-col .image-text-holder {
-      margin-bottom: 250px; } }
+      margin-bottom: 250px; }
+    .industries-section-container #particles-js .industries-icon-container .first-col .text, .industries-section-container #particles-js .industries-icon-container .second-col .text {
+      font-size: 15px; } }
 
 .expertise-section-container {
   background: #1abc9c;
