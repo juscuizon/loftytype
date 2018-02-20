@@ -1,9 +1,9 @@
 mixin navigation-links
 	ul
-		li: a.text(href="#") SERVICES
+		li: a.text(href="../{{site.basseurl}}") HOME
 		li: a.text(href="{{site.baseurl}}/About-us") ABOUT US
 		li: a.non-text(href="../{{site.baseurl}}"): img.logo(src="{{site.baseurl}}/assets/img/logo.svg")
-		li: a.text(href="#") BLOG
+		li: a.text(href="{{site.baseurl}}/Blog") BLOG
 		li: a.text(href="{{site.baseurl}}/Contact-us") CONTACT US
 
 .welcome-section-container.overlay

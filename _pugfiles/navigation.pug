@@ -1,20 +1,20 @@
 mixin mobile-navigation-links
 	ul
 		li: a.text(href="../{{site.basseurl}}") HOME
-		li: a.text(href="#") SERVICES
+		//li: a.text(href="#") SERVICES
 		li: a.text(href="{{site.baseurl}}/About-us") ABOUT US
-		li: a.text(href="#") BLOG
+		li: a.text(href="{{site.baseurl}}/Blog") BLOG
 		li: a.text(href="{{site.baseurl}}/Contact-us") CONTACT US
 
 .mobile-menu-button#mobile-menu-button
-		.hamburger-button
+	.hamburger-button
 
 .mobile-navigation
-		+mobile-navigation-links
+	+mobile-navigation-links
 
 .parallax-navigation
-		+mobile-navigation-links
+	+mobile-navigation-links
 
-		.contact-info
-			i.fa.fa-phone-square: span +63-915-490-8250
-			i.fa.fa-envelope: span contact@loftytype.com
+	.contact-info
+		i.fa.fa-phone-square: span +63-915-490-8250
+		i.fa.fa-envelope: span contact@loftytype.com
